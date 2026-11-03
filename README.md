@@ -23,3 +23,7 @@ The game runs fully in the browser and fetches data from free public APIs:
 - **Random Word API**: backup source for random words
 
 An internet connection is needed to play.
+
+---
+
+**Built with Claude**
