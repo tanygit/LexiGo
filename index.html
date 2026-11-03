@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LexiGo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div>
+        <h1>LexiGo</h1>
+        <p class="tagline">Every Guess Adds a Word to Your World</p>
+      </div>
+      <button id="new-game" class="chip" type="button">New game</button>
+    </header>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div class="play">
+      <div class="left">
+      <section class="hint-bar" aria-label="Hint">
+        <div id="hint-slots" class="hint-slots" aria-live="polite"></div>
+        <button id="hint-btn" class="hint-btn" type="button">
+          <span class="bulb" aria-hidden="true">💡</span>
+          <span id="hint-label">Hint</span>
+        </button>
+      </section>
+
+      <section id="board" class="board" aria-label="Game board"></section>
+      </div>
+
+      <section id="keyboard" class="keyboard" aria-label="Keyboard"></section>
+    </div>
+
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="result-title">
+    <div id="modal-card" class="modal-card">
+      <div id="result-badge" class="result-badge" aria-hidden="true"></div>
+      <p id="result-title" class="result-title"></p>
+      <h2 id="result-word" class="result-word"></h2>
+      <p id="result-pos" class="result-pos"></p>
+      <div id="result-meaning" class="result-meaning"></div>
+      <button id="play-again" class="primary" type="button">Play again</button>
+    </div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
